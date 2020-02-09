@@ -6,8 +6,9 @@
 Для реализации задуманного необходимо достаточно много времени и сил, поэтому приглашаются все желающие принять участие в проекте!
 
 ## Communication
-Для ведения задач будем использовать Trello: https://trello.com/russianstocklab
-Для общения Slack: #russianstocklab-open-source
+- Для ведения задач будем использовать [Trello]: https://trello.com/russianstocklab
+
+- Для общения [Slack]: #russianstocklab-open-source
 
 
 
