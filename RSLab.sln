@@ -31,6 +31,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RSLab.BL", "RSLab.BL", "{97
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSLab.BL", "RSLab.BL\BL\RSLab.BL.csproj", "{33B90751-DD6C-44ED-B8D9-273337FD2697}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSLab.DAL", "RSLab.DAL\RSLab.DAL.csproj", "{956E331A-589C-44F1-91FD-535852236929}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{33B90751-DD6C-44ED-B8D9-273337FD2697}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33B90751-DD6C-44ED-B8D9-273337FD2697}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33B90751-DD6C-44ED-B8D9-273337FD2697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{956E331A-589C-44F1-91FD-535852236929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{956E331A-589C-44F1-91FD-535852236929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{956E331A-589C-44F1-91FD-535852236929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{956E331A-589C-44F1-91FD-535852236929}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
