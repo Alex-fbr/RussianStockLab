@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Storage;
 using System.Data.Common;
 
-namespace MyLibrary.EntityFramework
+namespace RSLab.EntityFramework
 {
     public interface IBaseDbContext
     {

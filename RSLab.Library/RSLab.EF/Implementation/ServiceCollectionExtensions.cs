@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace MyLibrary.EntityFramework.Implementation
+namespace RSLab.EntityFramework.Implementation
 {
     public static class ServiceCollectionExtensions
     {

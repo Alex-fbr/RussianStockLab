@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace MyLibrary.Core.Extensions
+namespace RSLab.Core.Extensions
 {
     public static class ServiceCollectionExtensions
     {

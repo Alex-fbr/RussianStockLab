@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace MyLibrary.EntityFramework.Implementation
+namespace RSLab.EntityFramework.Implementation
 {
     internal static class AsyncHelper
     {

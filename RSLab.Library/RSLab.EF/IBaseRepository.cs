@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace MyLibrary.EntityFramework
+namespace RSLab.EntityFramework
 {
     public interface IBaseRepository<TEntity> where TEntity : class
     {

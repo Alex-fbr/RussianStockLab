@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using System;
 using System.Threading.Tasks;
 
-namespace MyLibrary.EntityFramework.Implementation
+namespace RSLab.EntityFramework.Implementation
 {
     public class BaseRepository<TEntity>: IBaseRepository<TEntity>
             where TEntity : class
