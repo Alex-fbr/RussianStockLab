@@ -1,17 +1,12 @@
 ﻿using RSLab.DAL.Enums;
 using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace RSLab.DAL.Entities
+namespace RSLab.BL.Models
 {
-    [Table("Stocks",Schema ="dbo")]
-    public class Stock
+    public class HistoryStockModel
     {
-        [Required]
-        public int Id { get; set; }
-        public string SECID { get; set; }
-        public string SHORTNAME { get; set; }
+        public string SecId { get; set; }
+        public string ShortName { get; set; }
         public double OpenPrice { get; set; }
         public double ClosePrice { get; set; }
         public double LowPrice { get; set; }
