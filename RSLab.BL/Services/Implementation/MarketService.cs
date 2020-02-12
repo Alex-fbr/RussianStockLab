@@ -42,16 +42,12 @@ namespace RSLab.BL.Services.Implementation
                 var request = (HttpWebRequest)WebRequest.Create(url);
                 using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
                 {
-                    using (Stream stream = response.GetResponseStream())
-                    {
-                        using (StreamReader reader = new StreamReader(stream))
-                        {
-                            responseAnswer = reader.ReadToEnd();
-                            reader.Close();
-                            stream.Close();
-                            response.Close();
-                        }
-                    }
+                    using Stream stream = response.GetResponseStream();
+                    using StreamReader reader = new StreamReader(stream);
+                    responseAnswer = reader.ReadToEnd();
+                    reader.Close();
+                    stream.Close();
+                    response.Close();
                 }
 
                 var allStocks = TryParseStringToListOfTQBRModel(responseAnswer);
@@ -67,10 +63,9 @@ namespace RSLab.BL.Services.Implementation
                 System.Diagnostics.Debug.WriteLine(ex.Message, "ERROR");
                 throw;
             }
+
             return answer;
-
         }
-
 
         private string GetColorByPercent(double? perc)
         {

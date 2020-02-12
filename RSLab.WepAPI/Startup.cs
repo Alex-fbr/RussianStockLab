@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -52,8 +53,8 @@ namespace RSLab.WepAPI
             });
 
             services.AddMvc()
-                .AddMvcOptions(t => t.EnableEndpointRouting = false)
-                .SetCompatibilityVersion(CompatibilityVersion.Latest);
+                    .AddMvcOptions(t => t.EnableEndpointRouting = false)
+                    .SetCompatibilityVersion(CompatibilityVersion.Latest);
 
             if (SwaggerIsEnabled)
             {
@@ -78,13 +79,17 @@ namespace RSLab.WepAPI
                 });
             }
 
-            services.AddMemoryCache();
+            services.AddDbContext<Contexts.StockDbContext>(options =>
+            {
+                options.UseSqlServer(Configuration["StockDbContext:ConnectionString"]);
+            });
 
             //// регистрация всех контекстов, репозиториев и сервисов
             services.AddScoped<IStockDbContext, Contexts.StockDbContext>();
             services.AddScoped<IStockRepository, Repositories.StockRepository>();
             services.AddScoped<IMarketService, Services.MarketService>();
 
+            services.AddMemoryCache();
             services.AddMvc().AddControllersAsServices();
         }
 
@@ -104,7 +109,6 @@ namespace RSLab.WepAPI
 
             if (SwaggerIsEnabled)
             {
-                // Register the Swagger generator and the Swagger UI middlewares
                 app.UseOpenApi();
                 app.UseSwaggerUi3();
             }
