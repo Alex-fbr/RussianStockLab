@@ -9,9 +9,7 @@ namespace RSLab.DAL.Internal.Implementation
         {
 
         }
-     
+   
         public DbSet<Stock> Stocks { get;set;}
     }
-
-    
 }
