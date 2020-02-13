@@ -6,7 +6,7 @@
 Для реализации задуманного необходимо достаточно много времени и сил, поэтому приглашаются все желающие принять участие в проекте!
 
 ## Communication
-- Для общения Slack и Telegram: #russianstocklab-open-source #https://t.me/RussianStockLab
+- Для общения Slack и Telegram: #russianstocklab-open-source #https://t.me/RussianStockLabChat
 
 
 
