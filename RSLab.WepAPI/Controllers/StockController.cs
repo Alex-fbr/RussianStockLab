@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Logging;
 using RSLab.BL.RemoteCallModels;
 using RSLab.BL.Services;
 using System;
@@ -13,18 +14,21 @@ namespace DataMining.WebApi.MOEX.Controllers
     [ResponseCache(Duration = 60)]
     public class StockController : ControllerBase
     {
+        private const int duration = 60;
+        private readonly ILogger<StockController> _logger;
         private readonly IMarketService _marketService;
         private IMemoryCache _cache;
         private static IndexStockResponse response = new IndexStockResponse();
 
-        public StockController(IMarketService marketService, IMemoryCache memoryCache)
+        public StockController(IMarketService marketService, IMemoryCache memoryCache, ILogger<StockController> logger)
         {
             _marketService = marketService;
             _cache = memoryCache;
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
         [HttpPost("[controller]/MSCI/get")]
-        [ResponseCache(Location = ResponseCacheLocation.Any, Duration = 60)]
+        [ResponseCache(Location = ResponseCacheLocation.Any, Duration = duration)]
         public IndexStockResponse GetStocks(IndexStockRequest query)
         {
             try
@@ -43,7 +47,7 @@ namespace DataMining.WebApi.MOEX.Controllers
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine(ex.Message, "ERROR");
+                _logger.LogError(ex, "Ошибка создания заявки лидов");
                 throw;
             }
 
@@ -67,7 +71,7 @@ namespace DataMining.WebApi.MOEX.Controllers
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($" ERROR  ----->  {ex.Message}");
+                _logger.LogError(ex, "Ошибка создания заявки лидов");
                 return new StatusCodeResult((int)HttpStatusCode.NotImplemented);
             }
 
@@ -99,7 +103,7 @@ namespace DataMining.WebApi.MOEX.Controllers
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($" ERROR  ----->  {ex.Message}");
+                _logger.LogError(ex, "Ошибка создания заявки лидов");
                 return new StatusCodeResult((int)HttpStatusCode.NotImplemented);
             }
 
