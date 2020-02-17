@@ -31,17 +31,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.BL", "RSLab.BL\RSLab.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.WepAPI", "RSLab.WepAPI\RSLab.WepAPI.csproj", "{484BF11F-58B9-4A7C-8434-AD24B50217BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSLab.BlazorWebApp.Server", "RSLab.BlazorWebApp\Server\RSLab.BlazorWebApp.Server.csproj", "{8D65F9FD-78CB-4831-8312-BF08890F8396}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.BlazorWebApp.Server", "RSLab.BlazorWebApp\Server\RSLab.BlazorWebApp.Server.csproj", "{8D65F9FD-78CB-4831-8312-BF08890F8396}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSLab.BlazorWebApp.Client", "RSLab.BlazorWebApp\Client\RSLab.BlazorWebApp.Client.csproj", "{7749486D-64BA-4029-BAF4-841483ACB90F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.BlazorWebApp.Client", "RSLab.BlazorWebApp\Client\RSLab.BlazorWebApp.Client.csproj", "{7749486D-64BA-4029-BAF4-841483ACB90F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSLab.BlazorWebApp.Shared", "RSLab.BlazorWebApp\Shared\RSLab.BlazorWebApp.Shared.csproj", "{551E8160-1F40-43AE-9A7C-45115329DE25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.BlazorWebApp.Shared", "RSLab.BlazorWebApp\Shared\RSLab.BlazorWebApp.Shared.csproj", "{551E8160-1F40-43AE-9A7C-45115329DE25}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RSLab.BlazorWebApp", "RSLab.BlazorWebApp", "{341B799E-C3BF-4A52-8356-DC417E7C9FE8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RSLab.RazorWepApp", "RSLab.RazorWepApp", "{869A8690-65CE-4186-B542-B0DED809AF0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSLab.RazorWebApp", "RSLab.RazorWebApp\RSLab.RazorWebApp\RSLab.RazorWebApp.csproj", "{8CE41619-35A9-4A99-97C2-F5A9160F9578}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.RazorWebApp", "RSLab.RazorWebApp\RSLab.RazorWebApp\RSLab.RazorWebApp.csproj", "{8CE41619-35A9-4A99-97C2-F5A9160F9578}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RSLab.ReactWebApp", "RSLab.ReactWebApp", "{DB405312-04A5-41EF-9436-DF2107F0BCF4}"
 EndProject
@@ -63,6 +63,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "rslab-react-app", "RSLab.Re
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "60747"
+		SlnRelativePath = "RSLab.ReactJs\rslab-react-app\"
 	EndProjectSection
 EndProject
 Global
@@ -128,9 +129,7 @@ Global
 		{8CE41619-35A9-4A99-97C2-F5A9160F9578}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CE41619-35A9-4A99-97C2-F5A9160F9578}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FA4FFE05-0CCB-4137-91A5-CB9575AC0496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA4FFE05-0CCB-4137-91A5-CB9575AC0496}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA4FFE05-0CCB-4137-91A5-CB9575AC0496}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA4FFE05-0CCB-4137-91A5-CB9575AC0496}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
