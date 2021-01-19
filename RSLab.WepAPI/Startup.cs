@@ -84,7 +84,6 @@ namespace RSLab.WepAPI
                 options.UseSqlServer(Configuration["StockDbContext:ConnectionString"]);
             });
 
-            //// регистрация всех контекстов, репозиториев и сервисов
             services.AddScoped<IStockDbContext, Contexts.StockDbContext>();
             services.AddScoped<IStockRepository, Repositories.StockRepository>();
             services.AddScoped<IMarketService, Services.MarketService>();
@@ -93,7 +92,6 @@ namespace RSLab.WepAPI
             services.AddMvc().AddControllersAsServices();
         }
 
-        // Этот метод вызывается средой выполнения. Этот метод используется для настройки конвейера HTTP-запросов.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
