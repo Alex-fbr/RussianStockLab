@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.EF", "RSLab.Library\R
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.Test", "RSLab.Library\RSLab.Test\RSLab.Test.csproj", "{F1D42E7B-C411-43B0-8BF0-9CD488696C35}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.Razor", "RSLab.Library\RSLab.Razor\RSLab.Razor.csproj", "{FBA230CE-11D2-4C1D-97A5-6ED6A035CFB7}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.RemoteCall", "RSLab.Library\RSLab.RemoteCall\RSLab.RemoteCall.csproj", "{3EE02446-F8F9-402F-B1D0-A60B5CB85E34}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTests", "RSLab.Tests\XUnitTests\XUnitTests.csproj", "{1E4C9D01-8E7D-4065-B2F0-D75B4054E1FF}"
@@ -31,40 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.BL", "RSLab.BL\RSLab.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.WepAPI", "RSLab.WepAPI\RSLab.WepAPI.csproj", "{484BF11F-58B9-4A7C-8434-AD24B50217BD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.BlazorWebApp.Server", "RSLab.BlazorWebApp\Server\RSLab.BlazorWebApp.Server.csproj", "{8D65F9FD-78CB-4831-8312-BF08890F8396}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.BlazorWebApp.Client", "RSLab.BlazorWebApp\Client\RSLab.BlazorWebApp.Client.csproj", "{7749486D-64BA-4029-BAF4-841483ACB90F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.BlazorWebApp.Shared", "RSLab.BlazorWebApp\Shared\RSLab.BlazorWebApp.Shared.csproj", "{551E8160-1F40-43AE-9A7C-45115329DE25}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RSLab.BlazorWebApp", "RSLab.BlazorWebApp", "{341B799E-C3BF-4A52-8356-DC417E7C9FE8}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RSLab.RazorWepApp", "RSLab.RazorWepApp", "{869A8690-65CE-4186-B542-B0DED809AF0A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.RazorWebApp", "RSLab.RazorWebApp\RSLab.RazorWebApp\RSLab.RazorWebApp.csproj", "{8CE41619-35A9-4A99-97C2-F5A9160F9578}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RSLab.ReactWebApp", "RSLab.ReactWebApp", "{DB405312-04A5-41EF-9436-DF2107F0BCF4}"
-EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "rslab-react-app", "RSLab.ReactJs\rslab-react-app\", "{FA4FFE05-0CCB-4137-91A5-CB9575AC0496}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_60747"
-		Debug.AspNetCompiler.PhysicalPath = "RSLab.ReactJs\rslab-react-app\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60747\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_60747"
-		Release.AspNetCompiler.PhysicalPath = "RSLab.ReactJs\rslab-react-app\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60747\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "60747"
-		SlnRelativePath = "RSLab.ReactJs\rslab-react-app\"
-	EndProjectSection
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RSLab.WebApp", "RSLab.WebApp", "{DB405312-04A5-41EF-9436-DF2107F0BCF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -84,10 +49,6 @@ Global
 		{F1D42E7B-C411-43B0-8BF0-9CD488696C35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1D42E7B-C411-43B0-8BF0-9CD488696C35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1D42E7B-C411-43B0-8BF0-9CD488696C35}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FBA230CE-11D2-4C1D-97A5-6ED6A035CFB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FBA230CE-11D2-4C1D-97A5-6ED6A035CFB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FBA230CE-11D2-4C1D-97A5-6ED6A035CFB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FBA230CE-11D2-4C1D-97A5-6ED6A035CFB7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3EE02446-F8F9-402F-B1D0-A60B5CB85E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3EE02446-F8F9-402F-B1D0-A60B5CB85E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EE02446-F8F9-402F-B1D0-A60B5CB85E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -112,24 +73,6 @@ Global
 		{484BF11F-58B9-4A7C-8434-AD24B50217BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{484BF11F-58B9-4A7C-8434-AD24B50217BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{484BF11F-58B9-4A7C-8434-AD24B50217BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8D65F9FD-78CB-4831-8312-BF08890F8396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D65F9FD-78CB-4831-8312-BF08890F8396}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D65F9FD-78CB-4831-8312-BF08890F8396}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D65F9FD-78CB-4831-8312-BF08890F8396}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7749486D-64BA-4029-BAF4-841483ACB90F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7749486D-64BA-4029-BAF4-841483ACB90F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7749486D-64BA-4029-BAF4-841483ACB90F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7749486D-64BA-4029-BAF4-841483ACB90F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{551E8160-1F40-43AE-9A7C-45115329DE25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{551E8160-1F40-43AE-9A7C-45115329DE25}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{551E8160-1F40-43AE-9A7C-45115329DE25}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{551E8160-1F40-43AE-9A7C-45115329DE25}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8CE41619-35A9-4A99-97C2-F5A9160F9578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8CE41619-35A9-4A99-97C2-F5A9160F9578}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8CE41619-35A9-4A99-97C2-F5A9160F9578}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8CE41619-35A9-4A99-97C2-F5A9160F9578}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FA4FFE05-0CCB-4137-91A5-CB9575AC0496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA4FFE05-0CCB-4137-91A5-CB9575AC0496}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,15 +83,9 @@ Global
 		{C0876F35-757B-4EA7-8C78-D174CFAB6EB3} = {AB3D3C5C-F220-4E99-B6A9-8F7B4EA4FBB4}
 		{7EC4AC0D-E4B0-432E-83FF-225F8767A1C2} = {AB3D3C5C-F220-4E99-B6A9-8F7B4EA4FBB4}
 		{F1D42E7B-C411-43B0-8BF0-9CD488696C35} = {AB3D3C5C-F220-4E99-B6A9-8F7B4EA4FBB4}
-		{FBA230CE-11D2-4C1D-97A5-6ED6A035CFB7} = {AB3D3C5C-F220-4E99-B6A9-8F7B4EA4FBB4}
 		{3EE02446-F8F9-402F-B1D0-A60B5CB85E34} = {AB3D3C5C-F220-4E99-B6A9-8F7B4EA4FBB4}
 		{1E4C9D01-8E7D-4065-B2F0-D75B4054E1FF} = {72E070B9-FFBB-4254-AB89-EB58F50ED40B}
 		{6112B8B6-FF4B-4A97-A56D-09A2D2CFC7A1} = {5962804C-FEF1-4B6A-9C18-08C95BC1C423}
-		{8D65F9FD-78CB-4831-8312-BF08890F8396} = {341B799E-C3BF-4A52-8356-DC417E7C9FE8}
-		{7749486D-64BA-4029-BAF4-841483ACB90F} = {341B799E-C3BF-4A52-8356-DC417E7C9FE8}
-		{551E8160-1F40-43AE-9A7C-45115329DE25} = {341B799E-C3BF-4A52-8356-DC417E7C9FE8}
-		{8CE41619-35A9-4A99-97C2-F5A9160F9578} = {869A8690-65CE-4186-B542-B0DED809AF0A}
-		{FA4FFE05-0CCB-4137-91A5-CB9575AC0496} = {DB405312-04A5-41EF-9436-DF2107F0BCF4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9ABE9BC5-FBB6-4480-BE7F-9A77C5FF9433}

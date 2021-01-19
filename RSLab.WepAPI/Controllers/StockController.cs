@@ -82,8 +82,7 @@ namespace DataMining.WebApi.MOEX.Controllers
         {
             try
             {
-                var mas = new string[] { "LKOH", "SIBN", "TATN", "NVTK", "GMKN", "ROSN", "MAGN", "SNGSP", "ALRS", "MTSS", "FIVE",
-                    "CHMF", "SNGS", "NLMK", "IRAO", "PLZL", "MOEX", "VTBR", "POLY", "PHOR", "MGNT", "TRNFP" };
+                var mas = new string[] { "LKOH", "SIBN", "TATN", "NVTK", "GMKN", "ROSN", "MAGN", "SNGSP", "ALRS", "MTSS", "FIVE", "CHMF", "SNGS", "NLMK", "IRAO", "PLZL", "MOEX", "VTBR", "POLY", "PHOR", "MGNT", "TRNFP" };
 
                 foreach (var secid in mas)
                 {
