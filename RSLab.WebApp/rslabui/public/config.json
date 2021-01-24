@@ -1,0 +1,4 @@
+{
+  "apiUrl": "http://localhost:8090/RSLab.WebApi",
+  "routeBaseName": "/CSC.RIS.Editor.WebUI/"
+}
