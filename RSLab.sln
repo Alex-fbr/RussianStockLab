@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.EF", "RSLab.Library\R
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.Test", "RSLab.Library\RSLab.Test\RSLab.Test.csproj", "{F1D42E7B-C411-43B0-8BF0-9CD488696C35}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.RemoteCall", "RSLab.Library\RSLab.RemoteCall\RSLab.RemoteCall.csproj", "{3EE02446-F8F9-402F-B1D0-A60B5CB85E34}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTests", "RSLab.Tests\XUnitTests\XUnitTests.csproj", "{1E4C9D01-8E7D-4065-B2F0-D75B4054E1FF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTests", "RSLab.Tests\NUnitTests\NUnitTests.csproj", "{6112B8B6-FF4B-4A97-A56D-09A2D2CFC7A1}"
@@ -27,9 +25,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.DAL", "RSLab.DAL\RSLa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.BL", "RSLab.BL\RSLab.BL.csproj", "{B2E18C66-FBF6-4F31-B188-050D526100E1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.WepAPI", "RSLab.WepAPI\RSLab.WepAPI.csproj", "{484BF11F-58B9-4A7C-8434-AD24B50217BD}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RSLab.WebApp", "RSLab.WebApp", "{DB405312-04A5-41EF-9436-DF2107F0BCF4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSLab.WebApi", "RSLab.WebApi\RSLab.WebApi.csproj", "{033391BF-34A3-42E2-82CD-7026ED1AD4D1}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "rslabui", "RSLab.WebApp\rslabui\", "{9F97DC29-C283-493C-96BA-7C126B854843}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60680"
+		Debug.AspNetCompiler.PhysicalPath = "RSLab.WebApp\rslabui\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60680\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60680"
+		Release.AspNetCompiler.PhysicalPath = "RSLab.WebApp\rslabui\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60680\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "60680"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +67,6 @@ Global
 		{F1D42E7B-C411-43B0-8BF0-9CD488696C35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1D42E7B-C411-43B0-8BF0-9CD488696C35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1D42E7B-C411-43B0-8BF0-9CD488696C35}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3EE02446-F8F9-402F-B1D0-A60B5CB85E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3EE02446-F8F9-402F-B1D0-A60B5CB85E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3EE02446-F8F9-402F-B1D0-A60B5CB85E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3EE02446-F8F9-402F-B1D0-A60B5CB85E34}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1E4C9D01-8E7D-4065-B2F0-D75B4054E1FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1E4C9D01-8E7D-4065-B2F0-D75B4054E1FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E4C9D01-8E7D-4065-B2F0-D75B4054E1FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -69,10 +83,14 @@ Global
 		{B2E18C66-FBF6-4F31-B188-050D526100E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2E18C66-FBF6-4F31-B188-050D526100E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2E18C66-FBF6-4F31-B188-050D526100E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{484BF11F-58B9-4A7C-8434-AD24B50217BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{484BF11F-58B9-4A7C-8434-AD24B50217BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{484BF11F-58B9-4A7C-8434-AD24B50217BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{484BF11F-58B9-4A7C-8434-AD24B50217BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{033391BF-34A3-42E2-82CD-7026ED1AD4D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{033391BF-34A3-42E2-82CD-7026ED1AD4D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{033391BF-34A3-42E2-82CD-7026ED1AD4D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{033391BF-34A3-42E2-82CD-7026ED1AD4D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F97DC29-C283-493C-96BA-7C126B854843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F97DC29-C283-493C-96BA-7C126B854843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F97DC29-C283-493C-96BA-7C126B854843}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F97DC29-C283-493C-96BA-7C126B854843}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,9 +101,9 @@ Global
 		{C0876F35-757B-4EA7-8C78-D174CFAB6EB3} = {AB3D3C5C-F220-4E99-B6A9-8F7B4EA4FBB4}
 		{7EC4AC0D-E4B0-432E-83FF-225F8767A1C2} = {AB3D3C5C-F220-4E99-B6A9-8F7B4EA4FBB4}
 		{F1D42E7B-C411-43B0-8BF0-9CD488696C35} = {AB3D3C5C-F220-4E99-B6A9-8F7B4EA4FBB4}
-		{3EE02446-F8F9-402F-B1D0-A60B5CB85E34} = {AB3D3C5C-F220-4E99-B6A9-8F7B4EA4FBB4}
 		{1E4C9D01-8E7D-4065-B2F0-D75B4054E1FF} = {72E070B9-FFBB-4254-AB89-EB58F50ED40B}
 		{6112B8B6-FF4B-4A97-A56D-09A2D2CFC7A1} = {5962804C-FEF1-4B6A-9C18-08C95BC1C423}
+		{9F97DC29-C283-493C-96BA-7C126B854843} = {DB405312-04A5-41EF-9436-DF2107F0BCF4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9ABE9BC5-FBB6-4480-BE7F-9A77C5FF9433}
